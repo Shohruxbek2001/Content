@@ -1,0 +1,16 @@
+{
+    "locale": {
+        "en": "Английский",
+        "ru": "Русский"
+    
+      },
+    "nav": {
+        "home": "Главная",
+        "products": "Nashi products",
+        "services": "Сервисы",
+        "projects": "Проекты",
+        "team": "Наша команда",
+        "testimonials": "Отзывы"
+
+      }
+}

@@ -1,0 +1,13 @@
+{
+    "locale": {
+        "en": "English",
+        "ru": "Russian"
+  
+      },
+    "nav": {
+      "home": "Home",
+      "products": "Our Products",
+      "services": "Our Services",
+      "about": "About Us"
+    }
+  }
