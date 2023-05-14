@@ -23,7 +23,7 @@ const x = window.matchMedia("(min-width: 700px)")
     const onClickOutsideNavbar = ref(null)
         onClickOutside(onClickOutsideNavbar, (event) => isOpenNavbarToggle.value = false)
   }
-//} 
+//}
 const toggleNavbar = () => {
     isOpenNavbarToggle.value = !isOpenNavbarToggle.value
 }
