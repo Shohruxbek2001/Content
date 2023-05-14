@@ -6,11 +6,10 @@
       },
     "nav": {
         "home": "Главная",
-        "products": "Nashi products",
-        "services": "Сервисы",
-        "projects": "Проекты",
-        "team": "Наша команда",
-        "testimonials": "Отзывы"
+        "products": "Наши Продукты",
+        "services": "Наши Сервисы",
+        "partners": "Партнёры",
+        "about": "О Нас"
 
       }
 }

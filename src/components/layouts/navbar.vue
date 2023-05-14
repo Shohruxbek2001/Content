@@ -31,22 +31,21 @@ const toggleNavbar = () => {
 
 </script>
 <template>
-    <header class="fixed z-10 top-0 block w-screen bg-blue-500 flex justify-center">
-        <div class="md:flex justify-between w-4/5 container items-center px-20">
-            <div class="block text-2xl text-white">
-                Content
+    <header class="fixed z-10 top-0 w-screen bg-blue-500 flex justify-center">
+        <div class="flex justify-between w-9/10 container items-center lg:px-20 py-3 md:py-0">
+            <div class="block md:text-2xl text-lg text-white">
+              <a href="/#header">Content</a>
+
             </div>
             <div class="block">
                 <div  ref="onClickOutsideNavbar">
-                    <button @click="toggleNavbar()" class="absolute top-0 block p-1 sm:p-1.5 right-4 rounded-xl text-slate-700 dark:text-white focus:ring lg:hidden">
-                        <MenuIcon class="w-7 h-7" />
-                    </button>
                     <nav class="block" v-show="isOpenNavbarToggle" :class="{isOpenNavbarToggle: true}">
-                        <ul class="md:flex md:items-center space-x-3 md:static absolute md:bg-inherit md:backdrop-blur-none bg-blue-500/60 backdrop-blur-md duration-700 ease-in">
-                            <li><a class="flex text-xl text-white px-10 py-4 hover:bg-white hover:text-blue-500" href="#">{{ $t("nav.home") }}</a></li>
-                            <li><a class="flex text-xl text-white px-10 py-4 hover:bg-white hover:text-blue-500" href="#">{{ $t("nav.products") }}</a></li>
-                            <li><a class="flex text-xl text-white px-10 py-4 hover:bg-white hover:text-blue-500" href="#">{{ $t("nav.services") }}</a></li>
-                            <li><a class="flex text-xl text-white px-10 py-4 hover:bg-white hover:text-blue-500" href="#">{{ $t("nav.about") }}</a></li>
+                        <ul class="md:flex md:items-center lg:space-x-3 space-x-0 md:static right-0 top-14 absolute md:bg-inherit md:backdrop-blur-none bg-blue-500/60 backdrop-blur-md duration-700 ease-in">
+                            <li><a class="flex text-xl text-white px-6 py-4 hover:bg-white hover:text-blue-500" href="/#header">{{ $t("nav.home") }}</a></li>
+                            <li><a class="flex text-xl text-white px-6 py-4 hover:bg-white hover:text-blue-500" href="/#product">{{ $t("nav.products") }}</a></li>
+                            <li><a class="flex text-xl text-white px-6 py-4 hover:bg-white hover:text-blue-500" href="/#services">{{ $t("nav.services") }}</a></li>
+                            <li><a class="flex text-xl text-white px-6 py-4 hover:bg-white hover:text-blue-500" href="/#partners">{{ $t("nav.partners") }}</a></li>
+                            <li><a class="flex text-xl text-white px-6 py-4 hover:bg-white hover:text-blue-500" href="/#about">{{ $t("nav.about") }}</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -54,6 +53,9 @@ const toggleNavbar = () => {
             <div>
                 <LanguageSwitcher />
             </div>
+            <button @click="toggleNavbar()" class="block p-1 sm:p-1.5 right-4 rounded-xl text-white focus:ring md:hidden">
+                <MenuIcon class="w-7 h-7" />
+            </button>
         </div>
     </header>
 </template>
