@@ -4,7 +4,7 @@ import 'vue3-marquee/dist/style.css'
 </script>
 <template>
   <div id="partners">
-
+  </div>
     <div class="md:m-36 m-5 p-5 md:pb-10 shadow-lg bg-white rounded">
       <div class="flex justify-center text-2xl font-medium py-5 md:py-16 md:text-4xl">
         <div>Partners</div>
@@ -36,5 +36,5 @@ import 'vue3-marquee/dist/style.css'
         </div>
       </Vue3Marquee>
     </div>
-  </div>
+
 </template>
