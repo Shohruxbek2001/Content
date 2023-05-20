@@ -14,15 +14,17 @@ const switchLanguage = (lang) => {
      isOpenNavbarToggle.value = false
 
 }
+const onClickOutsideNavbar = ref(null)
 const isOpenNavbarToggle = ref(false)
 const x = window.matchMedia("(min-width: 700px)")
 // const lg = (x) => {
   if(x.matches) {
     isOpenNavbarToggle.value = true
   } else {
-    const onClickOutsideNavbar = ref(null)
-        onClickOutside(onClickOutsideNavbar, (event) => isOpenNavbarToggle.value = false)
+    onClickOutside(onClickOutsideNavbar, (event) => isOpenNavbarToggle.value = false)
   }
+
+
 //}
 const toggleNavbar = () => {
     isOpenNavbarToggle.value = !isOpenNavbarToggle.value
@@ -32,7 +34,7 @@ const toggleNavbar = () => {
 </script>
 <template>
     <header class="fixed z-10 top-0 w-screen bg-blue-500 flex justify-center">
-        <div class="flex justify-between w-9/10 container items-center lg:px-20 py-3 md:py-0">
+        <div class="flex justify-between w-9/10 container items-center lg:px-20 px-5 py-3 md:py-0">
             <div class="block md:text-2xl text-lg text-white">
               <a href="/#header">Content</a>
 
@@ -50,10 +52,10 @@ const toggleNavbar = () => {
                     </nav>
                 </div>
             </div>
-            <div>
+            <div class="ml-20 md:ml-0">
                 <LanguageSwitcher />
             </div>
-            <button @click="toggleNavbar()" class="block p-1 sm:p-1.5 right-4 rounded-xl text-white focus:ring md:hidden">
+            <button @click="toggleNavbar()" class="block sm:p-1.5 rounded-xl text-white focus:ring md:hidden">
                 <MenuIcon class="w-7 h-7" />
             </button>
         </div>
