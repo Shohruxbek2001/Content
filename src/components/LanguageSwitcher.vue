@@ -35,7 +35,7 @@ const onClickOutsideDropDown = ref(null)
         </select>  -->
     <div class="box-border grid"  ref="onClickOutsideDropDown">
         <label @click="toggleLangDropDown()"  for="langs"
-            class="grid content-center text-xl select-none bg-blue-500 dark:bg-[#131B4D] w-36 text-white rounded justify-items-center hover:bg-white hover:text-blue-500">{{ t(`locale.${i18n.global.locale.value}`) }}</label>
+            class="grid content-center md:text-xl text-lg select-none bg-blue-500 dark:bg-[#131B4D] w-36 text-white rounded justify-items-center hover:bg-white hover:text-blue-500">{{ t(`locale.${i18n.global.locale.value}`) }}</label>
         <ul v-if="isOpenLangDropDown" class="absolute z-10 mt-12 font-medium rounded-lg w-36 bg-blue-500/60 backdrop-blur dark:bg-[#131B4D]" >
             <div v-for="(sLocale, idx) in supportedLocales" :key="idx">
                 <li @click="switchLanguage(sLocale)" class="p-1 pl-3 hover:bg-white cursor-pointer select-none text-white text-md hover:text-blue-500">
