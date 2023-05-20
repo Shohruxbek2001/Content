@@ -7,6 +7,18 @@ const routes = [
         name: "Index",
         component: () => import("../components/Index.vue"),
         meta: {layout: "dashboard"},
+    },
+    {
+        path: "/see-more",
+        name: "see-more",
+        component: () => import("../components/pages/More.vue"),
+        meta: {layout: "dashboard"},
+    },
+    {
+        path: "/product",
+        name: "product",
+        component: () => import("../components/pages/Product.vue"),
+        meta: {layout: "dashboard"},
     }
 ];
 

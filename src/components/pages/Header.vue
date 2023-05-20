@@ -1,3 +1,12 @@
+<script setup>
+import {useRouter} from 'vue-router'
+
+const router = useRouter()
+
+const seeMore = () => {
+  router.push('/see-more')
+}
+</script>
 <template>
   <div id="header">
     <div class="block h-screen">
@@ -10,8 +19,8 @@
             elit. Et, voluptatibus totam architecto dignissimos sint quibusdam.
           </div>
           <div class="flex">
-            <button
-                class="md:py-4 md:px-16 py-2 px-8 block text-sm md:text-md bg-blue-500 text-white hover:bg-white hover:text-blue-500 border border-blue-500 rounded">
+            <button @click="seeMore"
+                    class="md:py-4 md:px-16 py-2 px-8 block text-sm md:text-md bg-blue-500 text-white hover:bg-white hover:text-blue-500 border border-blue-500 rounded">
               LEARN MORE
             </button>
           </div>
