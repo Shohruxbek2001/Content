@@ -2,6 +2,9 @@
   <div id="services">
   </div>
   <div class="bg-services h-full py-10 block">
+    <div class="md:text-4xl text-2xl flex justify-center mb-14 md:mb-0">
+      <div>Our Services</div>
+    </div>
     <div
         class="2xl:mx-56 md:mx-36 md:py-24 mx-10 py-15 grid grid-cols-12 md:gap-12 gap-y-10 md:items-stretch justify-center">
       <div
