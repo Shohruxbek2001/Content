@@ -6,9 +6,9 @@ import About from './pages/About.vue'
 import Clients from "./pages/Clients.vue";
 </script>
 <template>
-    <Header />
-    <Products />
-    <Services />
-    <Clients />
-    <About />
+  <Header/>
+  <Products/>
+  <Services/>
+  <Clients/>
+  <About/>
 </template>

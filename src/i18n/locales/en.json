@@ -1,14 +1,13 @@
 {
-    "locale": {
-        "en": "English",
-        "ru": "Russian"
-  
-      },
-    "nav": {
-      "home": "Home",
-      "products": "Our Products",
-      "services": "Our Services",
-      "partners": "Partners",
-      "about": "About Us"
-    }
+  "locale": {
+    "en": "English",
+    "ru": "Russian"
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Our Products",
+    "services": "Our Services",
+    "partners": "Partners",
+    "about": "About Us"
   }
+}
